@@ -1,0 +1,155 @@
+/*$myColor: red;
+
+h1 {
+  color: $myColor;
+}
+*/
+ //bazı özelliklere kendim değerler verdim. Çünkü tasarımdaki özellikleri verdiğimde          
+ // göründügünden farklı duruyordu bende. Onu Ece'ye de sormuştum. Birebir aynı olmasına gerek yok dedi.
+.homePage {
+  margin: 26px;
+  height: 939px;                              
+  background-color: #14142B;
+  border-radius: 39px;
+
+  &__nav {
+    background: #14142B;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 141px;
+    gap: 54px; 
+    
+
+    &-logo1 {
+      font-size: 18px;
+      color: #F9BC60;
+      line-height: 25.2px;
+      font-weight: 500;
+      margin-right: 189px;
+
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-item {
+      height: 22px;
+      margin-right: 54px;
+      text-decoration: none;
+      color: #F9BC60;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+
+      &.active {
+        font-weight: 700;
+        border-bottom: 3px solid #F9BC60;
+
+      }
+    }
+
+    &-button {
+      background-color: #FFFFFF;
+      width: 160px;
+      height: 40px;
+      //margin-right: 61px;
+      margin-left: 159px;
+      padding: 9px 37px;
+      border-radius: 47px;
+      gap: 10px;
+      color: #004643;
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 500;
+
+    }
+  }
+
+  &__header {
+
+    &-waveContainer {
+      
+    }
+
+    &-wave {
+     
+
+    }
+
+    &-descriptions{
+       margin-left: 164px;
+
+    }
+
+    &-title{
+      font-family: 'Chillax', sans-serif;   // Projeye font family eklemesini beceremedim :( , Bir bakar mısın
+      font-weight: 600;
+      width: 616px;
+      height: 166px;
+      top: 239px;
+      left: 190px;
+      font-size: 56px;
+      line-height: 56px;
+      color: #F9BC60;
+      margin-bottom: 18px;
+    }
+    &-keşfet{
+      font-weight: 700;
+      font-style: italic;
+
+    }
+    &-info{
+      width: 607px;
+      height: 69px;
+      font-size: 18px;
+      line-height: 23.4px;
+      color: #FFF6E8;
+      margin-bottom: 47px;
+
+    }
+    &-btn{
+      background-color: #E16162;
+      width: 310px;
+      height: 57px;
+      border-radius: 25px;
+      color: #FFFFFF;
+      padding: 16px, 65px, 16px, 65px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.2px;
+      margin-bottom: 56px;
+      display: flex;    // Aslında buralarda _flex.scss ayrı bir dosya oluştursak daha temiz kod olur
+      align-items: center;
+      justify-content: center;
+      gap: 10px; 
+    }
+    &-contents{
+       margin-left: 30px;
+      
+    }
+    &-info2{
+      font-size: 16px;
+      line-height: 22.4px;
+      font-weight: 500;
+      color: #FFF6E8;
+      list-style: none;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+  
+    }
+    &-icon{
+      margin-right: 8px;
+    }
+
+  }
+
+}

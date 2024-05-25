@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Chillax", sans-serif;
+  src: url("https://api.fontshare.com/v2/css?f[]=chillax@400,1&display=swap");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Chillax", sans-serif;
+}/*# sourceMappingURL=App.css.map */
