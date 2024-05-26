@@ -56,6 +56,8 @@ const Navbar = () => {
         <div className='homePage__header-image'>
         <img src={yemekresmi} alt="" className='homePage__header-image-main' />
         <img src={tarifliresim} alt="" className='homePage__header-image-tarif' />
+        <img src={gülenresim} alt="" className='homePage__header-image-gülen' />
+        <img src={vejeteryanresim} alt="" className='homePage__header-image-vejeteryan' />
         </div>
 
 
