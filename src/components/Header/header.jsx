@@ -5,6 +5,7 @@ import okYönlendirme from '../../assets/svg/ok.svg'
 import sapka from '../../assets/svg/sapka.svg'
 import smile from '../../assets/svg/emoji.svg'
 import çatal from '../../assets/svg/çatal.svg'
+import elips from '../../assets/svg/elipslogo.svg'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
@@ -13,6 +14,7 @@ const Navbar = () => {
     <section className='homePage'>
        <nav className='homePage__nav'>
             <div className='homePage__nav-logo'>
+              <img src={elips} alt="" />
               <p className='homePage__nav-logo1'>MenuMaster</p>
              </div>
              <div className='homePage__nav-links'>
@@ -33,7 +35,7 @@ const Navbar = () => {
              <p className='homePage__header-info'>Yapay zeka destekli uygulamamız, kişisel ihtiyaçlarınıza uygun yemek tarifleri ve beslenme önerileri sunarak size bu yolda rehberlik ediyor. Uygulamayı indir ve yüzlerce çeşit yemek tariflerine göz at! </p>
              <button className='homePage__header-btn'>Uygulamaya Git <img src={okYönlendirme} alt=""/> </button>
              <ul className='homePage__header-contents'>
-               <li className='homePage__header-info2'><img src={sapka} alt="" className='homePage__header-icon' />Yapay Zeka Destekli Tarifler</li> {/**Bu icon ile yazı hizalanmadı , bir bakar mısın buraya da */}
+               <li className='homePage__header-info2 sapka_fix'><img src={sapka} alt="" className='homePage__header-icon homePage__header-icon-sapka ' />Yapay Zeka Destekli Tarifler</li> {/**Bu icon ile yazı hizalanmadı , bir bakar mısın buraya da */}
                <li className='homePage__header-info2'><img src={smile} alt="" className='homePage__header-icon' />Kişileştirilmiş Menüler</li>
                <li className='homePage__header-info2'><img src={çatal} alt="" className='homePage__header-icon' />Beslenme Türlerine Duyarlı</li>
             </ul>

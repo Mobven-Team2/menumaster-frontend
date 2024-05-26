@@ -4,11 +4,11 @@ h1 {
   color: $myColor;
 }
 */
- //bazı özelliklere kendim değerler verdim. Çünkü tasarımdaki özellikleri verdiğimde          
- // göründügünden farklı duruyordu bende. Onu Ece'ye de sormuştum. Birebir aynı olmasına gerek yok dedi.
+//bazı özelliklere kendim değerler verdim. Çünkü tasarımdaki özellikleri verdiğimde          
+// göründügünden farklı duruyordu bende. Onu Ece'ye de sormuştum. Birebir aynı olmasına gerek yok dedi.
 .homePage {
   margin: 26px;
-  height: 939px;                              
+  height: 939px;
   background-color: #14142B;
   border-radius: 39px;
 
@@ -22,8 +22,14 @@ h1 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-bottom: 141px;
-    gap: 54px; 
-    
+    gap: 54px;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-left: 16px;
+    }
 
     &-logo1 {
       font-size: 18px;
@@ -75,22 +81,17 @@ h1 {
 
   &__header {
 
-    &-waveContainer {
-      
-    }
+    &-waveContainer {}
 
-    &-wave {
-     
+    &-wave {}
 
-    }
-
-    &-descriptions{
-       margin-left: 164px;
+    &-descriptions {
+      margin-left: 164px;
 
     }
 
-    &-title{
-      font-family: 'Chillax', sans-serif;   // Projeye font family eklemesini beceremedim :( , Bir bakar mısın
+    &-title {
+      font-family: 'Chillax', sans-serif; // Projeye font family eklemesini beceremedim :( , Bir bakar mısın
       font-weight: 600;
       width: 616px;
       height: 166px;
@@ -101,12 +102,14 @@ h1 {
       color: #F9BC60;
       margin-bottom: 18px;
     }
-    &-keşfet{
+
+    &-keşfet {
       font-weight: 700;
       font-style: italic;
 
     }
-    &-info{
+
+    &-info {
       width: 607px;
       height: 69px;
       font-size: 18px;
@@ -115,7 +118,8 @@ h1 {
       margin-bottom: 47px;
 
     }
-    &-btn{
+
+    &-btn {
       background-color: #E16162;
       width: 310px;
       height: 57px;
@@ -125,17 +129,20 @@ h1 {
       font-size: 18px;
       font-weight: 500;
       line-height: 25.2px;
+      border: none;
       margin-bottom: 56px;
-      display: flex;    // Aslında buralarda _flex.scss ayrı bir dosya oluştursak daha temiz kod olur
+      display: flex; // Aslında buralarda _flex.scss ayrı bir dosya oluştursak daha temiz kod olur
       align-items: center;
       justify-content: center;
-      gap: 10px; 
+      gap: 10px;
     }
-    &-contents{
-       margin-left: 30px;
-      
+
+    &-contents {
+      margin-left: 30px;
+
     }
-    &-info2{
+
+    &-info2 {
       font-size: 16px;
       line-height: 22.4px;
       font-weight: 500;
@@ -144,11 +151,13 @@ h1 {
       margin-bottom: 32px;
       display: flex;
       align-items: center;
-  
+
     }
-    &-icon{
+
+    &-icon {
       margin-right: 8px;
     }
+
 
   }
 
