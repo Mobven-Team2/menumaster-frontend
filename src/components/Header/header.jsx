@@ -5,7 +5,13 @@ import okYönlendirme from '../../assets/svg/ok.svg'
 import sapka from '../../assets/svg/sapka.svg'
 import smile from '../../assets/svg/emoji.svg'
 import çatal from '../../assets/svg/çatal.svg'
+import yemekresmi from '../../assets/svg/yemekresmi.svg'
 import elips from '../../assets/svg/elipslogo.svg'
+import çizgi2 from '../../assets/svg/çizgialt.svg'
+import gülenresim from '../../assets/svg/gülenresim.svg'
+import tarifliresim from '../../assets/svg/tarifliresim.svg'
+import vejeteryanresim from '../../assets/svg/vejeteryanresim.svg'
+import altçizgi from '../../assets/svg/kırmızıçizgi.svg'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
@@ -28,10 +34,16 @@ const Navbar = () => {
        </nav>
       <header className='homePage__header'>
         <div className='homePage__header-waveContainer'>
-          {/* <img className='homePage__header-wave'  src={cizgiİmg} alt="" />*/}  {/**Dalga şeklindeki svg 'yi projede kullanırken beceremedim :( , o kısma da bakar mısın*/}
+          <img className='homePage__header-wave'  src={cizgiİmg} alt="" /> 
         </div>
+
+        <div className='homePage_divider'>
+
         <div className='homePage__header-descriptions'>                                {/**Keşfet yazan yazının altındaki stili alamadım. svg şeklinde değil sanırım. Ece'ye bir sormak lazım */}
              <h2 className='homePage__header-title'>Sana Özel Oluşturulan Yemek Tariflerini <span className='homePage__header-keşfet'> Keşfet.</span></h2>
+             <div className='homePage__header-waveContainer'>
+                <img className='homePage__header-wave-behind'  src={altçizgi} alt="" /> 
+             </div>
              <p className='homePage__header-info'>Yapay zeka destekli uygulamamız, kişisel ihtiyaçlarınıza uygun yemek tarifleri ve beslenme önerileri sunarak size bu yolda rehberlik ediyor. Uygulamayı indir ve yüzlerce çeşit yemek tariflerine göz at! </p>
              <button className='homePage__header-btn'>Uygulamaya Git <img src={okYönlendirme} alt=""/> </button>
              <ul className='homePage__header-contents'>
@@ -40,14 +52,21 @@ const Navbar = () => {
                <li className='homePage__header-info2'><img src={çatal} alt="" className='homePage__header-icon' />Beslenme Türlerine Duyarlı</li>
             </ul>
         </div>
+
         <div className='homePage__header-image'>
-
-
-
+        <img src={yemekresmi} alt="" className='homePage__header-image-main' />
+        <img src={tarifliresim} alt="" className='homePage__header-image-tarif' />
         </div>
 
 
 
+        </div>
+        
+
+
+        <div className='homePage__header-waveContainer'>
+          <img className='homePage__header-wave-end'  src={çizgi2} alt="" /> 
+        </div>
       </header>
 
       </section>

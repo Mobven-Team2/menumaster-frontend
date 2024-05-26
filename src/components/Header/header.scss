@@ -1,16 +1,26 @@
 /*$myColor: red;
 
+
 h1 {
   color: $myColor;
 }
 */
 //bazı özelliklere kendim değerler verdim. Çünkü tasarımdaki özellikleri verdiğimde          
 // göründügünden farklı duruyordu bende. Onu Ece'ye de sormuştum. Birebir aynı olmasına gerek yok dedi.
+
+
+
 .homePage {
+  z-index: 0;
+
   margin: 26px;
   height: 939px;
   background-color: #14142B;
   border-radius: 39px;
+
+  &_divider {
+    display: flex;
+  }
 
   &__nav {
     background: #14142B;
@@ -56,9 +66,7 @@ h1 {
       line-height: 22.4px;
 
       &.active {
-        font-weight: 700;
-        border-bottom: 3px solid #F9BC60;
-
+        font-weight: 900;
       }
     }
 
@@ -67,6 +75,7 @@ h1 {
       width: 160px;
       height: 40px;
       //margin-right: 61px;
+      border: none;
       margin-left: 159px;
       padding: 9px 37px;
       border-radius: 47px;
@@ -74,16 +83,36 @@ h1 {
       color: #004643;
       font-size: 16px;
       line-height: 22.4px;
-      font-weight: 500;
+      font-weight: 600;
 
     }
   }
 
   &__header {
+    position: relative;
 
-    &-waveContainer {}
+    &-waveContainer {
+      position: relative;
+    }
 
-    &-wave {}
+    &-wave {
+      position: absolute;
+      top: -12em; // Bu şekilde ekledim çizgiyi doğrudur umarım.
+    }
+
+    &-wave-end {
+      position: absolute;
+      bottom: -8.4em;
+      right: 2rem; // sağ alttaki çizgiyi ekledim
+    }
+
+    &-wave-behind {
+      position: absolute;
+      top: -8.4em;
+      left: 16em;
+      z-index: 1; // This makes sure it's behind other elements with higher z-index
+    }
+
 
     &-descriptions {
       margin-left: 164px;
@@ -91,7 +120,7 @@ h1 {
     }
 
     &-title {
-      font-family: 'Chillax', sans-serif; // Projeye font family eklemesini beceremedim :( , Bir bakar mısın
+      font-family: 'Chillax', sans-serif; // Hallettim bunu index.html üzerinden ekledim. Bu font.scss kısımlarını silebiliriz ya da güncelleyebiliriz.
       font-weight: 600;
       width: 616px;
       height: 166px;
@@ -106,7 +135,8 @@ h1 {
     &-keşfet {
       font-weight: 700;
       font-style: italic;
-
+      z-index: 100;
+      position: relative;
     }
 
     &-info {
@@ -156,6 +186,21 @@ h1 {
 
     &-icon {
       margin-right: 8px;
+    }
+
+    &-image {
+      position: relative;
+
+      &-main {
+        position: absolute;
+        margin-left: 6rem;
+        margin-top: -7rem;
+      }
+
+      &-tarif {
+        position: absolute;
+      }
+
     }
 
 
