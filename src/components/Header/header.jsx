@@ -39,7 +39,7 @@ const Navbar = () => {
 
         <div className='homePage_divider'>
 
-        <div className='homePage__header-descriptions'>                                {/**Keşfet yazan yazının altındaki stili alamadım. svg şeklinde değil sanırım. Ece'ye bir sormak lazım */}
+        <div className='homePage__header-descriptions'>                             
              <h2 className='homePage__header-title'>Sana Özel Oluşturulan Yemek Tariflerini <span className='homePage__header-keşfet'> Keşfet.</span></h2>
              <div className='homePage__header-waveContainer'>
                 <img className='homePage__header-wave-behind'  src={altçizgi} alt="" /> 
