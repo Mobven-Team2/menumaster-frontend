@@ -17,6 +17,7 @@ import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
+    <main className='container'>
     <section className='homePage'>
        <nav className='homePage__nav'>
             <div className='homePage__nav-logo'>
@@ -72,6 +73,8 @@ const Navbar = () => {
       </header>
 
       </section>
+    </main>
+    
     
     </>
    
