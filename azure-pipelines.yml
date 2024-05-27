@@ -44,8 +44,18 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'mobven-ssh'
-    sourceFolder: '$(Pipeline.Workspace)/s/MealMateAPI.Application/bin/Release/net8.0/linux-x64/publish/'
+    sourceFolder: '$(Pipeline.Workspace)/s/build'
     contents: '**'
-    targetFolder: '/var/www/MenuMaster/MealMateAPI.Application'
+    targetFolder: '/var/www/MenuMaster/html'
     readyTimeout: '20000'
   displayName: 'CopyFilesOverSSH'
+  
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'mobven-ssh'
+    runOptions: 'commands'
+    commands: |
+      systemctl stop apache2
+
+    readyTimeout: '20000'
+  displayName: 'Service-Stop'
