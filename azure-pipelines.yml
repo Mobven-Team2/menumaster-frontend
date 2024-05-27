@@ -55,7 +55,7 @@ steps:
     sshEndpoint: 'mobven-ssh'
     runOptions: 'commands'
     commands: |
-      systemctl stop apache2
+      systemctl start apache2
 
     readyTimeout: '20000'
-  displayName: 'Service-Stop'
+  displayName: 'Service-Start'
