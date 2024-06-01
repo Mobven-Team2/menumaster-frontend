@@ -14,7 +14,10 @@ import vejeteryanresim from '../../assets/svg/vejeteryanresim.svg'
 import altçizgi from '../../assets/svg/kırmızıçizgi.svg'
 import { Link, NavLink } from 'react-router-dom'
 
+import { scroller } from 'react-scroll';
+
 const Navbar = () => {
+
   return (
     <>
     <main className='container'>
@@ -26,10 +29,10 @@ const Navbar = () => {
              </div>
              <div className='homePage__nav-links'>
                 <NavLink to="/" activeClassName="active" className='homePage__nav-item'>Anasayfa </NavLink>
-                <NavLink to="/kimiz" className='homePage__nav-item'>Biz Kimiz? </NavLink>
-                <NavLink to="/hizmetlerimiz" className='homePage__nav-item'>Hizmetlerimiz </NavLink>
-                <NavLink to="/tarifler" className='homePage__nav-item'>Tarifler </NavLink>
-                <NavLink to="/hakkımızda" className='homePage__nav-item'>Hakkımızda </NavLink>
+                <NavLink to="/" className='homePage__nav-item'>Hizmetlerimiz</NavLink>
+                <NavLink to="/" className='homePage__nav-item'>Nasıl Kullanılır? </NavLink>
+                <NavLink to="/" className='homePage__nav-item'>Hakkımızda</NavLink>
+                <NavLink to="/" className='homePage__nav-item'>S.S.S </NavLink>
              </div>
              <button className='homePage__nav-button'>Bize Ulaşın</button>
        </nav>
@@ -38,7 +41,7 @@ const Navbar = () => {
           <img className='homePage__header-wave'  src={cizgiİmg} alt="" /> 
         </div>
 
-        <div className='homePage_divider'>
+      <div className='homePage_divider'>
 
         <div className='homePage__header-descriptions'>                             
              <h2 className='homePage__header-title'>Sana Özel Oluşturulan Yemek Tariflerini <span className='homePage__header-keşfet'> Keşfet.</span></h2>
@@ -48,24 +51,21 @@ const Navbar = () => {
              <p className='homePage__header-info'>Yapay zeka destekli uygulamamız, kişisel ihtiyaçlarınıza uygun yemek tarifleri ve beslenme önerileri sunarak size bu yolda rehberlik ediyor. Uygulamayı indir ve yüzlerce çeşit yemek tariflerine göz at! </p>
              <button className='homePage__header-btn'>Uygulamaya Git <img src={okYönlendirme} alt=""/> </button>
              <ul className='homePage__header-contents'>
-               <li className='homePage__header-info2 sapka_fix'><img src={sapka} alt="" className='homePage__header-icon homePage__header-icon-sapka ' />Yapay Zeka Destekli Tarifler</li> {/**Bu icon ile yazı hizalanmadı , bir bakar mısın buraya da */}
+               <li className='homePage__header-info2 sapka_fix'><img src={sapka} alt="" className='homePage__header-icon homePage__header-icon-sapka ' />Yapay Zeka Destekli Tarifler</li> 
                <li className='homePage__header-info2'><img src={smile} alt="" className='homePage__header-icon' />Kişileştirilmiş Menüler</li>
                <li className='homePage__header-info2'><img src={çatal} alt="" className='homePage__header-icon' />Beslenme Türlerine Duyarlı</li>
             </ul>
         </div>
 
         <div className='homePage__header-image'>
-        <img src={yemekresmi} alt="" className='homePage__header-image-main' />
-        <img src={tarifliresim} alt="" className='homePage__header-image-tarif' />
-        <img src={gülenresim} alt="" className='homePage__header-image-gülen' />
-        <img src={vejeteryanresim} alt="" className='homePage__header-image-vejeteryan' />
-        </div>
+            <img src={yemekresmi} alt="" className='homePage__header-image-main' />
+            <img src={tarifliresim} alt="" className='homePage__header-image-tarif' />
+            <img src={gülenresim} alt="" className='homePage__header-image-gülen' />
+            <img src={vejeteryanresim} alt="" className='homePage__header-image-vejeteryan' />
+       </div>
 
-
-
-        </div>
+      </div>
         
-
 
         <div className='homePage__header-waveContainer'>
           <img className='homePage__header-wave-end'  src={çizgi2} alt="" /> 

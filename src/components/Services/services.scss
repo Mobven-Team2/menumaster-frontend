@@ -1,5 +1,5 @@
 body {
-    background-color: #EFE5DA;
+    background-color: #FFFFFF;
 }
 
 
@@ -11,27 +11,38 @@ body {
     align-items: center;
     gap: 2rem;
     height: 1020px;
-
+    
 
     &__title {
-        font-size: 48px;
-        color: #004643;
+        font-size: 36px;
+        color: #2C2C52;
+        font-weight: 600;
+        line-height: 44px;     
+    }
+    &__serviceİntro{
+        height: 104px;
+        width: 774px;
+        font-size: 22px;
+        line-height: 26.4px;
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 400;
+        color: #475467 ;
+        margin-bottom: 40px;
+        text-align: center;
     }
 
     &__container {
         display: flex;
-
         align-items: center;
     }
-
     &__card1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 360px;
+       // align-items: center;
+        width: 350px;
         height: 516px;
-        margin: 1rem;
+        margin-right: 24px;
         background-image: url('../../assets/svg/kart1.svg');
         background-size: cover;
         border-radius: 30px;
@@ -46,33 +57,38 @@ body {
             font-size: 24px;
             font-weight: 600;
             color: #ffffff;
-            margin-bottom: 1rem;
-            margin-top: 3rem;
+            margin-bottom: 8px;
+            text-align: left;
+            line-height: 33.6px;
+            padding-left: 32px;
         }
-
         &__desc {
             font-size: 16px;
             color: #ffffff;
             padding: 0 1rem;
-            text-align: center;
-            font-weight: 200;
+           // text-align: center;
+            font-weight: 500px;
+            line-height: 22.4px;
+            text-align: left;
+            padding-left: 36px;
+            padding-right: 30px;
+           
         }
-
     }
-
     &__card2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 360px;
+      //  align-items: center;
+        width: 350px;
         height: 516px;
-        margin: 1rem;
+        margin-right: 24px;
         background-image: url('../../assets/svg/kart2.svg');
         background-size: cover;
         border-radius: 30px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
+     
 
         &:hover {
             transform: scale(1.1);
@@ -81,27 +97,33 @@ body {
         &__title {
             font-size: 24px;
             font-weight: 600;
-            color: #401639;
-            margin: 1rem 0;
+            color: #2C2C52;
+           // margin: 1rem 0;
+            margin-top: 3rem;
+            margin-bottom: 8px;
+            line-height: 33.6px;
+            padding-left: 32px;
         }
-
         &__desc {
             font-size: 16px;
-            color: #401639;
+            color:#2C2C52 ;
             padding: 0 1rem;
-            text-align: center;
-            font-weight: 200;
+            font-family: 'Chillax',sans-serif;
+            text-align: left;
+            font-weight: 500;
+            line-height: 22.4px;
+            padding-left: 32px;
+           
         }
     }
-
     &__card3 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 360px;
+        //align-items: center;
+        width: 350px;
         height: 516px;
-        margin: 1rem;
+        margin-right: 24px;
         background-image: url('../../assets/svg/kart3.svg');
         background-size: cover;
         border-radius: 30px;
@@ -115,16 +137,24 @@ body {
         &__title {
             font-size: 24px;
             font-weight: 600;
-            color: #401639;
-            margin: 1rem 0;
+            color: #2C2C52;
+            line-height: 33.6px;
+            padding-left: 32px;
+           // margin: 1rem 0;
+            margin-top: 3rem;
+            margin-bottom: 8px;
+           
         }
 
         &__desc {
             font-size: 16px;
-            color: #401639;
+            color: #2C2C52 ;
             padding: 0 1rem;
-            text-align: center;
-            font-weight: 200;
+            //text-align: center;
+            text-align: left;
+            font-weight: 500;
+            padding-left: 32px;
+            line-height: 22.4px;
         }
     }
 

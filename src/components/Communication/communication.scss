@@ -1,0 +1,119 @@
+.communication {
+    padding: 80px 135px;
+
+    &__form {
+      max-width: 475px;
+      padding: 20px;
+      border-radius: 8px;
+      float: left;
+
+      &-title{
+         color: #2C2C52;
+         font-family: "Chillax", sans-serif;
+         font-weight: 600;
+         font-size: 56px;
+         line-height: 78.4px;
+         width: 678px;
+         height: 78px;
+         margin-bottom: 16px;
+
+      }
+      &-desc{
+        margin-bottom: 80px;
+        font-family: "Urbanist";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #475467 ;
+        width: 475px;
+        height: 48px;
+     }
+      &-formfield {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+  
+      &-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+        &-label {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          color: #344054;
+          font-family: "Urbanist";
+          margin-bottom: 5px;
+        }
+  
+        &-input,&-area{
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #D0D5DD;
+            border-radius: 16px;
+            font-size: 16px;
+            margin-bottom: 24px;
+            color: #667085;
+        }
+        &-area {
+            padding: 10px 14px;
+            margin-bottom: 12px;
+            height: 124px;
+           
+        }
+        &-box{
+          border: none;
+        }
+      
+  
+      &-group--inline {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+  
+        .communication__form-group {
+          flex: 1;
+        }
+      }
+  
+      &-btn {
+        padding: 16px 210.5px;
+        background-color: #FD853A;
+        color: #FFFFFF;
+        border: none;
+        height: 56px;
+        border-radius: 90px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: "Urbanist";
+        text-align: center;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #e46515;
+        }
+      }
+      &-articles,&-span{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #344054 ;
+        margin-left: 12px;
+      }
+      &-span{
+        font-weight: 600;
+        margin-left: 1px;
+      }
+    }
+  
+    &__image {
+      margin-top: 20px; 
+      margin-left: 730px;
+      border-radius: 16px;
+      margin-top: 118px;
+    }
+  }
+  

@@ -1,0 +1,74 @@
+.teamPage{
+    background-color:#FFFFFF ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /*Öğelerin dikeyde ortalanmasını sağlar.*/
+    gap: 64px;
+    height: 804px;
+    padding-left: 80px 0px ;
+   
+  
+
+   &-title{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 78.4px;
+    color: #2C2C52;
+    font-family: 'Chillax', sans-serif;
+   
+   }
+
+   &-desc{
+     width:768px ;
+     height: 90px;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 30px;
+     color: #475467;
+     text-align: center;
+     font-family: "Urbanist";
+
+   }
+
+    &__members{
+       width: 1300px;
+       height: 448px;
+       padding: 0px 32px;
+       display: flex;
+       justify-content: center; /* Öğeleri yatayda ortalar */
+       flex-wrap: wrap; /* Öğelerin bir satıra sığmaması durumunda alt satıra geçmesini sağlar */
+       gap: 20px;
+      
+      
+
+        &-member{
+          float: left; 
+          margin-right: 32px;
+          text-align: center;
+          margin-bottom: 64px;
+        }
+        &-profil{
+          margin-bottom: 20px;
+        }
+        &-name{
+          color:#101828 ;
+          font-family: 'Urbanist';
+          line-height: 28px;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+        }
+        &-work {
+            font-family: 'Urbanist';
+            color:#EE714A;
+            line-height: 28px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+      
+    }
+   
+  
+}
