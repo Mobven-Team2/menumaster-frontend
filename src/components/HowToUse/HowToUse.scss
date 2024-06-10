@@ -1,0 +1,43 @@
+.howToUse {
+    min-height: 1936px; // height yerine min-height kullanıldı
+    overflow: hidden; // İçerik taşmasını önlemek için eklendi
+
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #1E1E1E;
+        margin-top: 40px;
+        margin-left: 180px;
+    }
+
+    &-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin-left: 180px;
+        margin-right: 180px;
+
+        &-item {
+            display: flex;
+            flex-wrap: wrap; // İçeriğin taşmasını engellemek için eklendi
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 40px; // Her bir item arasında boşluk bırakmak için eklendi
+        }
+
+        h6 {
+            color: #FA4A0C;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 46px;
+            color: #1E1E1E;
+        }
+
+        p {
+            color: grey;
+        }
+    }
+}
