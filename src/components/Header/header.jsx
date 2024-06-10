@@ -23,9 +23,9 @@ const Navbar = () => {
     <main className='container'>
     <section className='homePage'>
        <nav className='homePage__nav'>
-            <div className='homePage__nav-logo'>
-              <img src={elips} alt="" />
-              <p className='homePage__nav-logo1'>MenuMaster</p>
+             <div className='homePage__nav-logo'>
+              {/**  <img src={elips} alt="" />
+              <p className='homePage__nav-logo1'>MenuMaster</p>*/} 
              </div>
              <div className='homePage__nav-links'>
                 <NavLink to="/" activeClassName="active" className='homePage__nav-item'>Anasayfa </NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <NavLink to="/" className='homePage__nav-item'>Hakkımızda</NavLink>
                 <NavLink to="/" className='homePage__nav-item'>S.S.S </NavLink>
              </div>
-             <button className='homePage__nav-button'>Bize Ulaşın</button>
+             <div className='homePage__nav-action'><button className='homePage__nav-button'>Bize Ulaşın</button></div>
        </nav>
       <header className='homePage__header'>
         <div className='homePage__header-waveContainer'>

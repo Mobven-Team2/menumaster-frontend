@@ -7,18 +7,21 @@
     align-items: center;
     justify-content: center;
 
-    &-header {
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         max-width: 1560px; // Ekranda 4 kartın sığabileceği maksimum genişlik
-        padding: 20px;
+       padding: 40.5px 135px;
+        &-title {
+            // margin: 0;
+            color: #1E1E1E;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 61.6px;
+            font-family: "Chillax";
 
-        h2 {
-            margin: 0;
-            font-size: 32px; // Başlık font boyutu büyütüldü
-            color: #333;
         }
 
         &-controls {
@@ -28,77 +31,91 @@
         }
     }
 
-    &-wrapper {
+    &__wrapper {
         display: flex;
         gap: 20px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        overflow-x: hidden;
+        // scroll-snap-type: x mandatory;
         padding: 20px;
         cursor: grab;
         width: 100%;
         max-width: 1560px;
-    }
 
-    .card {
-        width: 350px; // Kart genişliği
-        height: 350px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        scroll-snap-align: center;
-        flex: 0 0 auto;
 
-        p {
+        &-card {
+            width: 350px; // Kart genişliği
+            height: 350px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            scroll-snap-align: center;
+            flex: 0 0 auto;
+        }
+
+        &-p {
             margin: 0;
             font-size: 20px;
             color: #333;
         }
 
-        .user-info {
+        &-desc {
             display: flex;
             align-items: center;
             margin-top: 20px;
-
-            .user-image {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                margin-right: 10px;
-            }
-
-            span {
-                font-size: 14px;
-                color: #333;
-            }
-        }
-    }
-
-    button {
-        margin-left: 10px;
-
-        color: rgb(3, 3, 3);
-        border: 1px solid #eb3f00f1;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 0;
-
-        &:hover {
-            background-color: #e03e0b;
         }
 
-        &:focus {
-            outline: none;
+        &-image {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            margin-right: 10px;
+            float: left;
+        }
+
+        &-username {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28.8px;
+            color: #000000;
+            font-family: "Roboto";
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-user {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            color: #475569;
         }
     }
+}
+button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #FD853A;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
 
-    .userExperience-wrapper::-webkit-scrollbar {
-        display: none;
+    &:hover {
+        background-color: #f2b893;
+
     }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.userExperience-wrapper::-webkit-scrollbar {
+    display: none;
 }

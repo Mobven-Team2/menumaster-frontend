@@ -1,3 +1,5 @@
+//@import url('href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"');
+
 .howToUse {
     min-height: 1936px; // height yerine min-height kullanıldı
     overflow: hidden; // İçerik taşmasını önlemek için eklendi
@@ -41,3 +43,69 @@
         }
     }
 }
+
+
+/*
+.howToUse {
+    min-height: 1936px;
+    overflow: hidden;
+
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #1E1E1E;
+        margin-top: 40px;
+        margin-left: 135px;
+    }
+
+    &__content {
+        box-sizing: border-box;
+        display: grid; /* Grid kullanarak 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Otomatik sütun genişliği ayarı 
+        gap: 20px;
+        margin-left: 30px;
+        margin-right: 180px;
+
+        &-itemOne {
+            display: flex;
+            flex-wrap: wrap; // İçeriğin taşmasını engellemek için eklendi
+            justify-content: space-between;
+            margin-bottom: 150px;
+           
+        }
+
+        &-image {
+            position: relative;
+            max-width: 100%;  
+        }
+        &-desc{
+            position: absolute;
+            float: left;
+            left: 538px;
+            margin-top: 230px; 
+        }
+        h6 {
+            color: #FA4A0C;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+        }
+
+        h2 {
+            font-size: 46px;
+            color: #1E1E1E;
+           
+        }
+
+        p {
+            color: grey;
+        }
+        &-itemTwo {
+            display: flex;
+            flex-wrap: wrap; // İçeriğin taşmasını engellemek için eklendi
+            justify-content: space-between;
+            margin-bottom: 150px;
+           
+        }
+    }
+}*/

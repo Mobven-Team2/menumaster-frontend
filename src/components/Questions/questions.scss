@@ -1,6 +1,4 @@
 .question{
-  // margin-bottom: 20px;
-  
   
   &__box {
     display: flex;
@@ -8,6 +6,7 @@
     align-items: center;
     //gap: 24px;
     height: 110px;
+    padding: 80px 135px;
     padding-right: 135px;
     padding-left: 135px;
    
@@ -25,8 +24,8 @@
         border-radius: 100%;
         width: 20px;
         height: 20px;
-        text-align: center;
-        font-size: 16px;
+      //  text-align: center;
+        font-size: 12px;
         color: #EE714A;
         cursor: pointer;
 
@@ -51,7 +50,7 @@
   &::after {
     content: "";
     display: block;
-    width: 85%; /* Çizginin genişliği */
+    width: 80%; /* Çizginin genişliği */
     height: 1px;
     background: #E4E7EC;
     margin: 32px auto 0; /* Ortalamak için */

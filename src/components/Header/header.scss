@@ -9,8 +9,7 @@ h1 {
 
 .container {
   background-color: #FFFFFF;
-  padding: 10px;
-  
+
 }
 
 .homePage {
@@ -21,16 +20,13 @@ h1 {
   background-color: #2C2C52;
   border-radius: 39px;
 
- 
-
-
 
   &_divider {
     display: flex;
   }
 
   &__nav {
-    background:#2C2C52 ;
+    background: #2C2C52;
     height: 72px;
     display: flex;
     justify-content: center;
@@ -39,15 +35,19 @@ h1 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-bottom: 141px;
-    gap: 54px;
+    // gap: 54px;
 
     &-logo {
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-left: 16px;
+      //margin-left: 16px;
+      width: 33%;
+      // justify-content: center;
+      flex: 1;
     }
 
+    /*
     &-logo1 {
       font-size: 18px;
       color: #F9BC60;
@@ -56,17 +56,16 @@ h1 {
       margin-right: 189px;
     
 
-    }
+    }*/
 
     &-links {
       display: flex;
-      align-items: center;
-      text-align: center;
+      flex: 2;
     }
 
     &-item {
       height: 19px;
-      margin-right: 54px;
+      margin-right: 48px;
       text-decoration: none;
       color: #F9BC60;
       font-size: 16px;
@@ -79,20 +78,22 @@ h1 {
       }
     }
 
+    &-action {
+      flex: 1;
+    }
+
     &-button {
       background-color: #FFFFFF;
       width: 160px;
       height: 40px;
-      //margin-right: 90px;
       border: none;
-      margin-left: 136px;
       padding: 9px 37px;
-      border-radius: 47px;
-      gap: 10px;
       color: #2C2C52;
       font-size: 16px;
-      line-height: 22.4px;
-      font-weight: 600;
+      line-height: 19.2px;
+      font-weight: 500;
+      border-radius: 47px;
+      font-family: "Urbanist";
 
     }
   }
@@ -101,36 +102,39 @@ h1 {
     position: relative;
 
     &-waveContainer {
-      position: relative;
-    }
 
+      position: relative;
+      
+    }
     &-wave {
+      max-width: 130px;
       position: absolute;
-      top: -10em; // Bu şekilde ekledim çizgiyi doğrudur umarım.
+      top: -7em;
     
+
     }
 
     &-wave-end {
       position: absolute;
       bottom: -8.4em;
-      right: 2rem; // sağ alttaki çizgiyi ekledim
+      right: 2rem;
     }
 
     &-wave-behind {
       position: absolute;
       top: -8.4em;
       left: 16em;
-      z-index: 1; 
+      z-index: 1;
     }
 
 
     &-descriptions {
-      margin-left: 164px;
+      margin-left: 110px;
 
     }
 
     &-title {
-      font-family: 'Chillax', sans-serif; // Hallettim bunu index.html üzerinden ekledim. Bu font.scss kısımlarını silebiliriz ya da güncelleyebiliriz.
+      font-family: 'Chillax', sans-serif;
       font-weight: 600;
       width: 616px;
       height: 166px;
@@ -203,27 +207,28 @@ h1 {
       position: relative;
 
       &-main {
+        max-width: 650px;
         position: absolute;
-        margin-left: 6rem;
+        margin-left: -4rem;
         margin-top: -7rem;
       }
 
       &-tarif {
         position: absolute;
-        margin-left: 27rem;
+        margin-left: 18rem;
         margin-top: -3.2rem;
       }
 
       &-gülen {
         position: absolute;
-        margin-top: -4rem;
-        margin-left: 6.5rem;
+        margin-top: -5rem;
+        margin-left: -2.5rem;
       }
 
       &-vejeteryan {
         position: absolute;
         margin-top: 25rem;
-        margin-left: 7rem;
+        margin-left: -1.5rem;
       }
 
     }
