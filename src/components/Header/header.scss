@@ -32,6 +32,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    cursor: pointer;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     margin-bottom: 141px;
@@ -69,6 +70,7 @@ h1 {
       text-decoration: none;
       color: #F9BC60;
       font-size: 16px;
+      font-weight: 500 !important;
       font-weight: 400;
       line-height: 19.2px;
       font-family: "Urbanist";
@@ -104,13 +106,14 @@ h1 {
     &-waveContainer {
 
       position: relative;
-      
+
     }
+
     &-wave {
       max-width: 130px;
       position: absolute;
       top: -7em;
-    
+
 
     }
 

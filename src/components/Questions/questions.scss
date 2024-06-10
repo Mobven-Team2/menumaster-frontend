@@ -1,5 +1,5 @@
-.question{
-  
+.question {
+
   &__box {
     display: flex;
     justify-content: space-between;
@@ -9,52 +9,57 @@
     padding: 80px 135px;
     padding-right: 135px;
     padding-left: 135px;
-   
 
-    &-span{
-        font-size: 24px;
-        font-weight: 700;
-        color:#2C2C52 ;
-        line-height: 30px;
-        font-family: "Urbanist";
+
+    &-span {
+      font-size: 24px;
+      font-weight: 700;
+      color: #2C2C52;
+      line-height: 30px;
+      font-family: "Urbanist";
     }
-    &-btn{
-        border: 2px solid #EE714A;
-        background-color: transparent;
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;
-      //  text-align: center;
-        font-size: 12px;
-        color: #EE714A;
-        cursor: pointer;
 
-        &:hover {
-          background-color:  #EE714A ;
-          color: white;
-          transition: all 0.6s;
-        }
-   
+    &-btn {
+      border: 2px solid #EE714A;
+      background-color: transparent;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      //  text-align: center;
+      font-size: 12px;
+      color: #EE714A;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #EE714A;
+        color: white;
+        transition: all 0.6s;
+      }
+
     }
   }
+
   &__answer {
-    color: #475467 ;
+    color: #475467;
     font-family: "Urbanist";
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     padding-right: 183px;
     padding-left: 135px;
- 
+
   }
+
   &::after {
     content: "";
     display: block;
-    width: 80%; /* Çizginin genişliği */
+    width: 80%;
+    /* Çizginin genişliği */
     height: 1px;
     background: #E4E7EC;
-    margin: 32px auto 0; /* Ortalamak için */
+    margin: 32px auto 0;
+    /* Ortalamak için */
   }
 
+
 }
-  

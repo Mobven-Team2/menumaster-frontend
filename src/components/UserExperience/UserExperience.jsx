@@ -40,8 +40,8 @@ const UserExperience = () => {
       <div className='userExperience__header'>
         <h2 className='userExperience__header-title'>Kullanıcı Deneyimleri</h2>
         <div className='userExperience__header-controls'>
-          <button onClick={scrollLeft}><img src={ok2} alt="" /></button>
-          <button onClick={scrollRight}><img src={ok3} alt="" /></button>
+          <button onClick={scrollLeft}><img src={ok3} alt="" /></button>
+          <button onClick={scrollRight}><img src={ok2} alt="" /></button>
         </div>
       </div>
       <div className='userExperience__wrapper' ref={wrapperRef}>
