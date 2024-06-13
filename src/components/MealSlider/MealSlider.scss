@@ -17,6 +17,7 @@
         height: 40px;
         border-radius: 50%;
         cursor: pointer;
+        z-index: 100;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,17 +58,18 @@
             flex: 0 0 auto;
             position: relative;
 
-            
-            &:first-child{
+
+            &:first-child {
                 margin-left: 0;
             }
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
 
 
             &--special {
-               // background-color: #FDEED7;
+                // background-color: #FDEED7;
             }
         }
 
@@ -94,7 +96,7 @@
             line-height: 35.2px;
             font-weight: 500;
 
-           
+
         }
 
         &-text {
@@ -103,7 +105,7 @@
             font-size: 18px;
             line-height: 25.2px;
             margin: 0 0 20px;
-           
+
         }
 
         &-button {
@@ -143,6 +145,11 @@ button {
     &:focus {
         outline: none;
     }
+}
+
+a {
+    text-decoration: none;
+
 }
 
 .mealSlider__wrapper::-webkit-scrollbar {

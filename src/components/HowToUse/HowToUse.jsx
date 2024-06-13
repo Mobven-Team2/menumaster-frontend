@@ -1,8 +1,8 @@
 import React from 'react'
 import "./HowToUse.scss"
-import phone1 from "../../assets/svg/phoneimg1.svg"
-import phone2 from "../../assets/svg/phoneimg2.svg"
-import phone3 from "../../assets/svg/phoneimg3.svg"
+import phone1 from "../../assets/png/phoneimg1.png"
+import phone2 from "../../assets/png/phoneimg2.png"
+import phone3 from "../../assets/png/phoneimg3.png"
 
 const HowToUse = () => {
     return (
@@ -15,9 +15,9 @@ const HowToUse = () => {
     <div className='howToUse-content'>
 
         <div className='howToUse-content-item'>
-            <div>
+            
                 <img src={phone1} alt="" />
-            </div>
+            
             <div>
             <h6>Create an account</h6>
             <h2>Create/login to an existing <br />
@@ -35,15 +35,15 @@ const HowToUse = () => {
             <p>Shop for your favorite meals or drinks <br />
             and enjoy while doing it.</p>
             </div>
-            <div>
+            
                 <img src={phone2} alt="" />
-            </div>
+            
         </div>
 
         <div className='howToUse-content-item'>
-            <div>
+            
                 <img src={phone3} alt="" />
-            </div>
+            
             <div>
             <h6>Create an account</h6>
             <h2>Create/login to an existing <br />

@@ -2,24 +2,25 @@
     height: 692px;
     background-image: url('../../assets/png/Rectangle\ 28.png');
     overflow: hidden;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    
+    align-items: center; // Ortalamak için eklendi
 
     &__header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 1560px; // Ekranda 4 kartın sığabileceği maksimum genişlik
+        max-width: 1560px;
         padding: 49px 135px 62px 135px;
+
         &-title {
             color: #1E1E1E;
             font-weight: 600;
             font-size: 56px;
             line-height: 61.6px;
             font-family: "Chillax";
-
         }
 
         &-controls {
@@ -27,6 +28,7 @@
             gap: 20px;
             flex-direction: row; // Oklar yan yana olacak şekilde düzenlendi
         }
+
         &-btn {
             margin-left: 10px;
             background-color: transparent;
@@ -35,7 +37,7 @@
             height: 40px;
             border-radius: 50%;
             cursor: pointer;
-        
+
             &:focus {
                 outline: none;
             }
@@ -51,8 +53,9 @@
         cursor: grab;
         width: 100%;
         max-width: 1560px;
-       
-        &-title{
+        margin: 0 auto; // Ortalamak için eklendi
+
+        &-title {
             font-family: "Chillax";
             font-weight: 600;
             font-size: 26px;
@@ -60,9 +63,8 @@
             margin-bottom: 16px;
         }
 
-
         &-card {
-            width: 400px; // Kart genişliği
+            width: 400px;
             height: 352px;
             background-color: white;
             opacity: 100%;
@@ -74,16 +76,15 @@
             justify-content: space-between;
             flex: 0 0 auto;
 
-
-           &:first-child{
+            &:first-child {
                 margin-left: 0;
             }
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
 
-          
-            &:hover{
+            &:hover {
                 width: 400px;
                 height: 390px;
             }
@@ -101,7 +102,6 @@
             display: flex;
             flex-direction: column;
             margin-top: 20px;
-           
         }
 
         &-image {
@@ -109,7 +109,6 @@
             height: 64px;
             border-radius: 50%;
             margin-bottom: 8px;
-           
         }
 
         &-username {
@@ -118,12 +117,10 @@
             line-height: 28.8px;
             color: #1E1E1E;
             font-family: "Roboto";
-        
-          
         }
     }
 }
 
-.userExperience-wrapper::-webkit-scrollbar {
+.userExperience__wrapper::-webkit-scrollbar {
     display: none;
 }

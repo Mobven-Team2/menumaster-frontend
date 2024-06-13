@@ -1,9 +1,9 @@
-
 .container {
   background-color: #FFFFFF;
   padding: 24px 26px;
 
 }
+
 .homePage {
   z-index: 0;
   height: 939px;
@@ -11,8 +11,8 @@
   border-radius: 39px;
   margin-bottom: 80px;
   width: 100%;
- 
- 
+
+
   &_divider {
     display: flex;
   }
@@ -38,16 +38,19 @@
       justify-content: center;
       flex: 1;
     }
-    &-logo1{
+
+    &-logo1 {
       height: 66px;
       width: 77px;
       margin-top: 16px;
-     
+
     }
+
     &-links {
       display: flex;
       flex: 2;
     }
+
     &-item {
       height: 19px;
       margin-right: 48px;
@@ -63,6 +66,7 @@
         font-weight: 700;
       }
     }
+
     &-action {
       flex: 1;
     }
@@ -82,17 +86,20 @@
 
     }
   }
+
   &__header {
     position: relative;
 
     &-waveContainer {
       position: relative;
     }
+
     &-wave {
       max-width: 130px;
       position: absolute;
       top: -7em;
     }
+
     &-wave-end {
       position: absolute;
       bottom: -8.4em;
@@ -143,7 +150,7 @@
     }
 
     &-btn {
-      background-color:#FF6C23 ;
+      background-color: #FF6C23;
       width: 310px;
       height: 57px;
       border-radius: 8px;
@@ -184,7 +191,7 @@
     &-image {
       position: relative;
       flex: 1;
-  
+
       &-main {
         position: absolute;
         left: -1rem;
@@ -213,6 +220,10 @@
     }
 
 
+  }
+
+  a {
+    text-decoration: none;
   }
 
 }

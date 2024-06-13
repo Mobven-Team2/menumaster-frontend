@@ -49,10 +49,11 @@ const MealSlider = () => {
                 <h3 className='mealSlider__wrapper-title'>{card.title}</h3>
                 <h4 className='mealSlider__wrapper-subtitle'>{card.subtitle}</h4>
                 <p className='mealSlider__wrapper-text'>{card.text}</p>
-                <button className='mealSlider__wrapper-button'>
+                <a href="https://mobven.com/" target="_blank" rel="noopener noreferrer" className='mealSlider__wrapper-button'>
                   Uygulamaya Git
                   <img src={buttonok} alt="button icon" className='mealSlider__wrapper-button-icon' />
-                </button>
+                </a>
+                
               </div>
             )}
           </div>
