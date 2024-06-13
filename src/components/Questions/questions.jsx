@@ -1,5 +1,7 @@
 import './questions.scss'
 import React, { useState } from 'react';
+import plusIcon from '../../assets/png/plusIcon.png';
+import minusIcon from '../../assets/png/minusIcon.png'
                        //props
 const QuestionPage = ({ question, answer }) => {
   // Durum değişikliği için
@@ -14,9 +16,12 @@ const QuestionPage = ({ question, answer }) => {
     <div className="question">
         <div className="question__box">
            <span className='question__box-span'>{question}</span>
-          <button className='question__box-btn' onClick={toggleAnswer}>
-             {isOpen ? '-' : '+'}
-          </button>
+          <img 
+            onClick={toggleAnswer}
+            className="question__box-icon"
+            src={isOpen ? minusIcon : plusIcon} 
+            alt={isOpen ? "Minus icon" : "Plus icon"} 
+          />
         </div>
       
       {isOpen && (     //isOpen true olduğunda answer gözüküyor
@@ -41,6 +46,7 @@ const App = () => {
   ];
 
   return (
+    <section className='questions'>
     <div className="app">
       <h2>Sıkça Sorulan Sorular</h2>
       {questions.map((item, index) => (
@@ -51,6 +57,7 @@ const App = () => {
         />
       ))}
     </div>
+    </section>
   );
 };
 

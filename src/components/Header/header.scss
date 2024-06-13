@@ -1,26 +1,18 @@
-/*$myColor: red;
-
-
-h1 {
-  color: $myColor;
-}
-*/
-
 
 .container {
   background-color: #FFFFFF;
+  padding: 24px 26px;
 
 }
-
 .homePage {
   z-index: 0;
-
-  margin: 26px 26px 80px 26px;
   height: 939px;
   background-color: #2C2C52;
   border-radius: 39px;
-
-
+  margin-bottom: 80px;
+  width: 100%;
+ 
+ 
   &_divider {
     display: flex;
   }
@@ -42,28 +34,20 @@ h1 {
       display: flex;
       align-items: center;
       gap: 16px;
-      //margin-left: 16px;
       width: 33%;
-      // justify-content: center;
+      justify-content: center;
       flex: 1;
     }
-
-    /*
-    &-logo1 {
-      font-size: 18px;
-      color: #F9BC60;
-      line-height: 25.2px;
-      font-weight: 500;
-      margin-right: 189px;
-    
-
-    }*/
-
+    &-logo1{
+      height: 66px;
+      width: 77px;
+      margin-top: 16px;
+     
+    }
     &-links {
       display: flex;
       flex: 2;
     }
-
     &-item {
       height: 19px;
       margin-right: 48px;
@@ -79,7 +63,6 @@ h1 {
         font-weight: 700;
       }
     }
-
     &-action {
       flex: 1;
     }
@@ -99,24 +82,17 @@ h1 {
 
     }
   }
-
   &__header {
     position: relative;
 
     &-waveContainer {
-
       position: relative;
-
     }
-
     &-wave {
       max-width: 130px;
       position: absolute;
       top: -7em;
-
-
     }
-
     &-wave-end {
       position: absolute;
       bottom: -8.4em;
@@ -129,7 +105,6 @@ h1 {
       left: 16em;
       z-index: 1;
     }
-
 
     &-descriptions {
       margin-left: 110px;
@@ -168,18 +143,18 @@ h1 {
     }
 
     &-btn {
-      background-color: #E16162;
+      background-color:#FF6C23 ;
       width: 310px;
       height: 57px;
-      border-radius: 25px;
+      border-radius: 8px;
       color: #FFFFFF;
       padding: 16px, 65px, 16px, 65px;
       font-size: 18px;
       font-weight: 500;
-      line-height: 25.2px;
+      line-height: 21.6px;
       border: none;
       margin-bottom: 56px;
-      display: flex; // Aslında buralarda _flex.scss ayrı bir dosya oluştursak daha temiz kod olur
+      display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
@@ -208,30 +183,31 @@ h1 {
 
     &-image {
       position: relative;
-
+      flex: 1;
+  
       &-main {
-        max-width: 650px;
         position: absolute;
-        margin-left: -4rem;
-        margin-top: -7rem;
+        left: -1rem;
+        top: -2rem;
+        max-width: 500px;
       }
 
       &-tarif {
         position: absolute;
-        margin-left: 18rem;
-        margin-top: -3.2rem;
+        left: 16rem;
+        top: -2.9rem;
       }
 
       &-gülen {
         position: absolute;
-        margin-top: -5rem;
-        margin-left: -2.5rem;
+        top: -5rem;
+        left: -5rem;
       }
 
       &-vejeteryan {
         position: absolute;
-        margin-top: 25rem;
-        margin-left: -1.5rem;
+        top: 25rem;
+        left: -3rem;
       }
 
     }

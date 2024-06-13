@@ -6,8 +6,8 @@ import okYönlendirme from '../../assets/svg/ok.svg';
 import sapka from '../../assets/svg/sapka.svg';
 import smile from '../../assets/svg/emoji.svg';
 import çatal from '../../assets/svg/çatal.svg';
-import yemekresmi from '../../assets/svg/yemekresmi.svg';
-import elips from '../../assets/svg/elipslogo.svg';
+import yemekresmi from '../../assets/svg/food.svg';
+import logo from '../../assets/svg/logo.svg'
 import çizgi2 from '../../assets/svg/çizgialt.svg';
 import gülenresim from '../../assets/svg/gülenresim.svg';
 import tarifliresim from '../../assets/svg/tarifliresim.svg';
@@ -22,8 +22,7 @@ const Navbar = () => {
         <section className='homePage'>
           <nav className='homePage__nav'>
             <div className='homePage__nav-logo'>
-              {/* <img src={elips} alt="" />
-              <p className='homePage__nav-logo1'>MenuMaster</p>*/} 
+                 <img className='homePage__nav-logo1' src={logo} alt="" />
             </div>
             <div className='homePage__nav-links'>
               <Link to="intro" smooth={true} duration={500} className='homePage__nav-item'>Anasayfa</Link>

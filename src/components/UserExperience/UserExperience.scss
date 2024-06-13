@@ -1,11 +1,10 @@
 .userExperience {
-    height: 576px;
-    background-color: #FDEED7;
+    height: 692px;
+    background-image: url('../../assets/png/Rectangle\ 28.png');
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
 
     &__header {
         display: flex;
@@ -13,9 +12,8 @@
         align-items: center;
         width: 100%;
         max-width: 1560px; // Ekranda 4 kartın sığabileceği maksimum genişlik
-       padding: 40.5px 135px;
+        padding: 49px 135px 62px 135px;
         &-title {
-            // margin: 0;
             color: #1E1E1E;
             font-weight: 600;
             font-size: 56px;
@@ -29,90 +27,100 @@
             gap: 20px;
             flex-direction: row; // Oklar yan yana olacak şekilde düzenlendi
         }
+        &-btn {
+            margin-left: 10px;
+            background-color: transparent;
+            border: 2px solid #1E1E1E;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+        
+            &:focus {
+                outline: none;
+            }
+        }
     }
 
     &__wrapper {
         display: flex;
-        gap: 20px;
+        gap: 26px;
         overflow-x: hidden;
-        // scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
         padding: 20px;
         cursor: grab;
         width: 100%;
         max-width: 1560px;
+       
+        &-title{
+            font-family: "Chillax";
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 41.6px;
+            margin-bottom: 16px;
+        }
 
 
         &-card {
-            width: 350px; // Kart genişliği
-            height: 350px;
+            width: 400px; // Kart genişliği
+            height: 352px;
             background-color: white;
-            border-radius: 20px;
+            opacity: 100%;
+            border-radius: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 50px 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            scroll-snap-align: center;
             flex: 0 0 auto;
+
+
+           &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+
+          
+            &:hover{
+                width: 400px;
+                height: 390px;
+            }
         }
 
         &-p {
-            margin: 0;
-            font-size: 20px;
-            color: #333;
+            font-size: 24px;
+            line-height: 28.8px;
+            font-weight: 400;
+            font-family: "Urbanist";
+            color: #1E1E1E;
         }
 
         &-desc {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             margin-top: 20px;
+           
         }
 
         &-image {
             width: 64px;
             height: 64px;
             border-radius: 50%;
-            margin-right: 10px;
-            float: left;
+            margin-bottom: 8px;
+           
         }
 
         &-username {
-            font-weight: 400;
+            font-weight: 700;
             font-size: 18px;
             line-height: 28.8px;
-            color: #000000;
+            color: #1E1E1E;
             font-family: "Roboto";
-            display: flex;
-            flex-direction: column;
+        
+          
         }
-
-        &-user {
-            font-family: "Roboto";
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22.4px;
-            color: #475569;
-        }
-    }
-}
-button {
-    margin-left: 10px;
-    background-color: transparent;
-    border: 2px solid #FD853A;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0;
-
-    &:hover {
-        background-color: #f2b893;
-
-    }
-
-    &:focus {
-        outline: none;
     }
 }
 

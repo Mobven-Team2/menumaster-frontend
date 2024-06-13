@@ -1,5 +1,6 @@
 .communication {
-    padding: 80px 135px;
+    padding: 80px 110px;
+    margin-bottom: 171px;
 
     &__form {
       max-width: 475px;
@@ -8,7 +9,7 @@
       float: left;
 
       &-title{
-         color: #2C2C52;
+         color: #1E1E1E;
          font-family: "Chillax", sans-serif;
          font-weight: 600;
          font-size: 56px;
@@ -24,7 +25,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        color: #475467 ;
+        color: #1E1E1E;
         width: 475px;
         height: 48px;
      }
@@ -43,7 +44,7 @@
           font-size: 16px;
           font-weight: 600;
           line-height: 24px;
-          color: #344054;
+          color: #1E1E1E;
           font-family: "Urbanist";
           margin-bottom: 5px;
         }
@@ -55,7 +56,14 @@
             border-radius: 16px;
             font-size: 16px;
             margin-bottom: 24px;
-            color: #667085;
+           
+            &::placeholder{
+              color: #1E1E1E;
+            }
+            &:focus {
+              outline: none; 
+              border-color:  #D0D5DD ; 
+          }
         }
         &-area {
             padding: 10px 14px;
@@ -80,7 +88,7 @@
   
       &-btn {
         padding: 16px 210.5px;
-        background-color: #FD853A;
+        background-color:  #FF6C23;
         color: #FFFFFF;
         border: none;
         height: 56px;
@@ -93,14 +101,15 @@
         cursor: pointer;
   
         &:hover {
-          background-color: #e46515;
+          background-color: #f5792b;
         }
       }
       &-articles,&-span{
+        font-family: "Urbanist";
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
-        color: #344054 ;
+        color: #1E1E1E ;
         margin-left: 12px;
       }
       &-span{
@@ -112,7 +121,7 @@
     &__image {
       margin-left: 550px;
       border-radius: 16px;
-      margin-top: 100px;
+      margin-top: 80px;
     }
   }
   

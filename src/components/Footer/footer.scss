@@ -1,0 +1,39 @@
+.footerPage{
+    width: 100%;
+    height: 216px;
+    background-color:  #E1EEFF;
+    padding: 68px 165px;
+   
+
+    &__span, &-info{
+        margin-bottom: 47px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1E1E1E;
+        font-family: "Roboto";
+    }
+    hr{ 
+        border: 1px solid #1E1E1E;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &__information{
+
+        &-left{
+            float: left;
+        }
+        &-right{
+            float: right;
+        }
+        &-info{
+            margin-right: 39px;
+            font-weight: 400;
+        }
+        &-account{
+            margin-right: 30px;
+        }
+
+    }
+}

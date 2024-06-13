@@ -1,41 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap' );
 
 .introPage {
     background-color: #FFFFFF;  
      display: flex;
-     gap: 80px;
+     gap: 24px;
      padding-bottom: 80px;
 
-    &__image{
-
-         &-left{
-           border: 0;
-         }
-     
-    }
-
     &__content{
-        padding: 64px 95px 27.13px 43px ;
-       
-
-
        &-text{
-        
         width: 867.11px;
         height: 909px;
         display: flex;
         flex-direction: column;
-        //gap: 48px;
+       
        }
-
         &-title{
+            margin-top: 65px;
             font-weight: 600;
             font-size: 56px;
             line-height: 61.6px;
             color: #1E1E1E ; 
             font-family: 'Chillax', sans-serif;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
         &-text2{
             font-weight: 600;
@@ -46,56 +34,38 @@
             margin-bottom: 77px;
         }
         &-service{
-            width: 325px;
-            height: 215px;
+            width: 384px;
+            height: 183px;
             float: left;
             margin-right: 25px;
-            margin-bottom: 48px;
-
-           
+            margin-bottom: 81px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 0px 16px 0px 16px; 
         }
         &-h5{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 26px;
-            color: #1E1E1E;
-            font-family: "Roboto";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27.58px;
+            color: #111827;
+            font-family: "Ubuntu", sans-serif;
             margin-bottom: 6px;
-            
+            text-align: left;
+            width: 100%;  
         }
         &-icon{
             margin-bottom: 14px;
+            align-items: center;
+            flex-direction: column;
         }
         &-info{
-            width: 325px;
-            height: 36px;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 400px;
-            line-height: 18px;
-            color: #1E1E1E;
-            font-family: "Roboto", sans-serif;
-           
+            line-height: 24px;
+            color: #374151;
+            font-family: "Ubuntu", sans-serif;     
         }
-        /*
-        &-new{
-            float: right;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 19.6px;
-            color: #166534;
-            width: 35px;
-            height: 25px;
-            display: flex;
-            gap: 10px;
-            background-color: #c3f1d4;
-            border: none;
-            border-radius: 5px;
-              
-        }*/
-        
-
-       
-
     }
   
 }  

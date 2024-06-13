@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
 import './MealSlider.scss';
 import meal from "../../assets/svg/meal.svg"
-import arrowLeft from "../../assets/svg/ok3.svg";
-import arrowRight from "../../assets/svg/ok2.svg";
+import arrowLeft from "../../assets/svg/ok4.svg";
+import arrowRight from "../../assets/svg/ok5.svg";
 import buttonok from "../../assets/svg/buttonok.svg"
 
 const MealSlider = () => {
   const cards = [
     { image: meal },
     { image: meal },
-    { title: "Menu Master AI", subtitle: "Uygulamayı İndir", text: "Bu yemek gerçekten çok lezzetli. Şeflerimiz tarafından özenle hazırlanmıştır.", image: null, isSpecial: true },
+    { title: "Menu Master AI", subtitle: "Uygulamayı İndir", text: "Kendi Şefiniz Olun: Beslenme Tercihlerinize Uygun Tarifler ve Alışveriş Listeleri!", image: null, isSpecial: true },
     { image: meal },
     { image: meal },
     { image: meal },
@@ -50,7 +50,7 @@ const MealSlider = () => {
                 <h4 className='mealSlider__wrapper-subtitle'>{card.subtitle}</h4>
                 <p className='mealSlider__wrapper-text'>{card.text}</p>
                 <button className='mealSlider__wrapper-button'>
-                  Uygulamayı İndir
+                  Uygulamaya Git
                   <img src={buttonok} alt="button icon" className='mealSlider__wrapper-button-icon' />
                 </button>
               </div>

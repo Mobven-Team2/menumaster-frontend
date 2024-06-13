@@ -9,6 +9,7 @@ import Communication from '../components/Communication/communication';
 import HowToUse from '../components/HowToUse/HowToUse';
 import UserExperience from '../components/UserExperience/UserExperience';
 import MealSlider from '../components/MealSlider/MealSlider';
+import Footer from '../components/Footer/footer';
 
 const MainPage = () => {
   return (
@@ -27,6 +28,7 @@ const MainPage = () => {
       <section id="mealSlider"><MealSlider /></section>
       <section id="questions"><Questions /></section>
       <section id="communication"><Communication /></section>
+      <section id='footer'><Footer/></section>
     </div>
   )
 }
