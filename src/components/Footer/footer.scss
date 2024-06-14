@@ -1,11 +1,12 @@
-.footerPage{
+.footerPage {
     width: 100%;
     height: 216px;
-    background-color:  #E1EEFF;
+    background-color: #E1EEFF;
     padding: 68px 165px;
-   
 
-    &__span, &-info{
+
+    &__span,
+    &-info {
         margin-bottom: 47px;
         font-size: 14px;
         line-height: 24px;
@@ -13,25 +14,31 @@
         color: #1E1E1E;
         font-family: "Roboto";
     }
-    hr{ 
+
+    hr {
         border: 1px solid #1E1E1E;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
-    &__information{
 
-        &-left{
+    &__information {
+
+        &-left {
             float: left;
+            cursor: pointer;
         }
-        &-right{
+
+        &-right {
             float: right;
         }
-        &-info{
+
+        &-info {
             margin-right: 39px;
             font-weight: 400;
         }
-        &-account{
+
+        &-account {
             margin-right: 30px;
         }
 
