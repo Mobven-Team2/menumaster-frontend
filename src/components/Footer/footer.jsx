@@ -4,6 +4,7 @@ import linkedin from "../../assets/svg/linkedin.svg";
 import twitter from "../../assets/svg/twitter.svg";
 import youtube from "../../assets/svg/youtube.svg";
 import instagram from "../../assets/svg/instagram.svg";
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const Footer = () => {
@@ -16,9 +17,9 @@ const Footer = () => {
                 < hr />
                 <div className="footerPage__information">
                     <div className="footerPage__information-left">
-                        <span className="footerPage__information-info">Anasayfa</span>
-                        <span className="footerPage__information-info">Hakkımızda</span>
-                        <span className="footerPage__information-info">Bizimle İletişime Geçin</span>
+                        <ScrollLink to="intro" smooth={true} duration={500} className="footerPage__information-info">Anasayfa</ScrollLink>
+                        <ScrollLink to="team" smooth={true} duration={500} className="footerPage__information-info">Hakkımızda</ScrollLink>
+                        <ScrollLink to="communication" smooth={true} duration={500} className="footerPage__information-info">Bizimle İletişime Geçin</ScrollLink>
                     </div>
                     <div  className="footerPage__information-right">
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/mobven/"><img className="footerPage__information-account" src={facebook} alt="" /></a>
