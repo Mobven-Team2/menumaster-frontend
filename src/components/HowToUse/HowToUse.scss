@@ -16,7 +16,7 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        margin-left: 180px;
+        margin-left: 160px;
         margin-right: 180px;
 
         &-item {
@@ -25,7 +25,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            margin-bottom: 40px; // Her bir item arasında boşluk bırakmak için eklendi
+            margin-bottom: 20px; // Her bir item arasında boşluk bırakmak için eklendi
         }
 
         h6 {
@@ -45,7 +45,11 @@
 
 
     .img2 {
-        width: 450px;
+        width: 400px;
+    }
+    .img3{
+        width: 400px;
+        float: left;
     }
 
 

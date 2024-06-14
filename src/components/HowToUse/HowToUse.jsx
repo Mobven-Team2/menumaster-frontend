@@ -16,9 +16,9 @@ const HowToUse = () => {
 
         <div className='howToUse-content-item'>
             
-                <img src={phone1} alt="" />
+            <img src={phone1} alt="" />
             
-            <div>
+            <div className=''>
             <h6>Hesap Oluştur</h6>
             <h2>Özelleştirilmiş Tarifler İçin <br /> Başlangıç Adımlarını At</h2>
             <p>Uygulamayı kullanmaya başlamak için hesap oluştur. <br /> Beslenme tercihlerini, favori mutfaklarını seç ve kişisel <br /> bilgilerini (yaş, boy, kilo, cinsiyet) gir. Sana uygun tarifleri <br /> keşfet.</p>

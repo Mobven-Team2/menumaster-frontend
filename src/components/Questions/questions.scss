@@ -2,6 +2,8 @@
   padding: 80px 130px  ;
 
 .question {
+    margin-bottom: 5px; /* Soru ile cevabı arasındaki boşluk */
+  
 
   &__box {
     display: flex;
@@ -27,6 +29,7 @@
   }
 
   &__answer {
+    margin-top: 5px; 
     color: #1E1E1E;
     font-family: "Urbanist";
     font-weight: 400;

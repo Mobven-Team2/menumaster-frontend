@@ -7,7 +7,7 @@ import buttonok from "../../assets/svg/buttonok.svg"
 
 const MealSlider = () => {
   const cards = [
-    { image: meal },
+    { image: meal},
     { image: meal },
     { title: "Menu Master AI", subtitle: "Uygulamayı İndir", text: "Kendi Şefiniz Olun: Beslenme Tercihlerinize Uygun Tarifler ve Alışveriş Listeleri!", image: null, isSpecial: true },
     { image: meal },

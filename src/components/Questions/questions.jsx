@@ -39,10 +39,10 @@ const QuestionPage = ({ question, answer }) => {
 const App = () => {
   const questions = [
     { question: 'Bu uygulama hangi beslenme tercihlerini destekliyor?', answer: 'Vegan, vejetaryen, ketojenik, glütensiz, laktozsuz gibi beslenme tercihlerinin yanı sıra, çeşitli kültürel ve etik beslenme tercihlerini de dikkate alır. Kullanıcılar, beslenme tercihlerini ve diğer önemli bilgilerini belirterek, kişiselleştirilmiş beslenme planları ve tarif önerileri alabilirler.' },
-    { question: 'Yemek fotoğraflarından tarif önerme nasıl işliyor?', answer: 'Vegan, vejetaryen, ketojenik, glütensiz, laktozsuz gibi beslenme tercihlerinin yanı sıra, çeşitli kültürel ve etik beslenme tercihlerini de dikkate alır. Kullanıcılar, beslenme tercihlerini ve diğer önemli bilgilerini belirterek, kişiselleştirilmiş beslenme planları ve tarif önerileri alabilirler.' },
-    { question: 'Kişiselleştirilmiş tarifler neye göre belirleniyor?', answer: 'Vegan, vejetaryen, ketojenik, glütensiz, laktozsuz gibi beslenme tercihlerinin yanı sıra, çeşitli kültürel ve etik beslenme tercihlerini de dikkate alır. Kullanıcılar, beslenme tercihlerini ve diğer önemli bilgilerini belirterek, kişiselleştirilmiş beslenme planları ve tarif önerileri alabilirler.' },
-    { question: 'Besin değerleri ve kalori hesaplama özelliği var mı?', answer: 'Vegan, vejetaryen, ketojenik, glütensiz, laktozsuz gibi beslenme tercihlerinin yanı sıra, çeşitli kültürel ve etik beslenme tercihlerini de dikkate alır. Kullanıcılar, beslenme tercihlerini ve diğer önemli bilgilerini belirterek, kişiselleştirilmiş beslenme planları ve tarif önerileri alabilirler.' },
-    { question: 'Sezonluk ve yerel besin önerileri hangi bilgilere dayanıyor?', answer: 'Vegan, vejetaryen, ketojenik, glütensiz, laktozsuz gibi beslenme tercihlerinin yanı sıra, çeşitli kültürel ve etik beslenme tercihlerini de dikkate alır. Kullanıcılar, beslenme tercihlerini ve diğer önemli bilgilerini belirterek, kişiselleştirilmiş beslenme planları ve tarif önerileri alabilirler.' },
+    { question: 'Yemek fotoğraflarından tarif önerme nasıl işliyor?', answer: 'Beğenilen bir yemek fotoğrafı, kullanıcı tarafından uygulamaya yüklenir. Sonrasında uygulama kullanıcıya attığı fotoğraftaki yemeğe göre benzer tarifler çıkarır. ' },
+    { question: 'Kişiselleştirilmiş tarifler neye göre belirleniyor?', answer: 'Kullanıcının kişisel bilgileri(yaş,boy,kilo vs), beslenme tipi ve favori mutfağına göre belirlenir.' },
+    { question: 'Besin değerleri ve kalori hesaplama özelliği var mı?', answer: 'Evet, seçtiğin öğünün tarif ekranında besin değerleri ve kalorilerini görebilirsin' },
+    { question: 'Sezonluk ve yerel besin önerileri hangi bilgilere dayanıyor?', answer: 'Bulduğunuz lokasyon ve mevsime göre öneriler verilmektedir.' },
   ];
 
   return (
