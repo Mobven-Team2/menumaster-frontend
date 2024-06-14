@@ -21,11 +21,11 @@ const Footer = () => {
                         <span className="footerPage__information-info">Bizimle İletişime Geçin</span>
                     </div>
                     <div  className="footerPage__information-right">
-                        <img className="footerPage__information-account" src={facebook} alt="" />
-                        <img className="footerPage__information-account" src={linkedin} alt="" />
-                        <img className="footerPage__information-account" src={twitter} alt="" />
-                        <img className="footerPage__information-account" src={youtube} alt="" />
-                        <img className="footerPage__information-account" src={instagram} alt="" />
+                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/mobven/"><img className="footerPage__information-account" src={facebook} alt="" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/mobven/"><img className="footerPage__information-account" src={linkedin} alt="" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://x.com/mobven"><img className="footerPage__information-account" src={twitter} alt="" /></a>
+                        <a  target="_blank" rel="noreferrer"href=""><img className="footerPage__information-account" src={youtube} alt="" /></a>
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mobventechnology/"><img className="footerPage__information-account" src={instagram} alt="" /></a>
                     </div>
                 </div>
             </section>
